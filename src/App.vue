@@ -1,8 +1,9 @@
 <script setup>
-import HomePage from './pages/home-page.vue';
-import AboutPage from './pages/about-page.vue';
+import { RouterView } from 'vue-router';
 </script>
 
-<template></template>
+<template>
+  <RouterView />
+</template>
 
 <style scoped></style>
