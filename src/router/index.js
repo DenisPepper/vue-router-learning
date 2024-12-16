@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '../pages/home-page.vue';
 import AboutPage from '../pages/about-page.vue';
 import CarPage from '../pages/car-page.vue';
+import ContactPage from '../pages/contact-page.vue';
 
 export default createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,7 @@ export default createRouter({
       path: '/cars/:id',
       name: 'car',
       component: CarPage,
+      children: [{ path: 'contact', name: 'contact', component: ContactPage }],
     },
   ],
 });
