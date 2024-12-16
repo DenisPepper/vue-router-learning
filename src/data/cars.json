@@ -1,6 +1,29 @@
 [
-  { "id": 1, "name": "Toyota", "price": 15000, "year": 2015 },
-  { "id": 2, "name": "Ford", "price": 16000, "year": 2016 },
-  { "id": 3, "name": "Land Rover", "price": 17000, "year": 2017 },
-  { "id": 4, "name": "Nissan", "price": 18000, "year": 2018 }
+  {
+    "id": 1,
+    "name": "Toyota",
+    "price": 15000,
+    "year": 2015,
+    "contact": { "dealer": "John", "number": "111-111-111-111" }
+  },
+  {
+    "id": 2,
+    "name": "Ford",
+    "price": 16000,
+    "year": 2016,
+    "contact": { "dealer": "Sam", "number": "121-121-121-121" }
+  },
+  {
+    "id": 3,
+    "name": "Land Rover",
+    "price": 17000,
+    "year": 2017
+  },
+  {
+    "id": 4,
+    "name": "Nissan",
+    "price": 18000,
+    "year": 2018,
+    "contact": { "dealer": "Chack", "number": "141-141-141-141" }
+  }
 ]
