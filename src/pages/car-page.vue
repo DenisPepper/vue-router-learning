@@ -11,13 +11,14 @@ const goToContact = () => car.contact && router.push(`${fullPath}/contact`);
 </script>
 
 <template>
-  <article>
+  <article v-if="car">
     <h2>{{ car.name }}</h2>
     <p>{{ car.price }}</p>
     <p>{{ car.year }}</p>
     <button v-if="car.contact" @click="goToContact">Click for contact</button>
     <RouterView />
   </article>
+  <div v-else>Машина не найдена</div>
 </template>
 
 <style scoped></style>
